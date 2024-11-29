@@ -51,6 +51,7 @@ Open your browser and navigate to http://127.0.0.1:5000.
 
 ## Project Structure
 biometric-authentication/
+
 ├── app.py                   # Main application file
 
 ├── templates/               # HTML templates
@@ -84,6 +85,9 @@ The system will authenticate and display the result.
 
 ### Future Enhancements
 Integration with cloud storage for biometric data.
+
 Advanced noise filtering for voice recognition in noisy environments.
+
 Support for additional biometric methods like fingerprint recognition.
+
 Multi-language support for the UI.
