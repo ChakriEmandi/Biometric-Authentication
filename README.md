@@ -52,14 +52,23 @@ Open your browser and navigate to http://127.0.0.1:5000.
 ## Project Structure
 biometric-authentication/
 ├── app.py                   # Main application file
+
 ├── templates/               # HTML templates
+
 │   ├── index.html           # Home page
+
 │   ├── register.html        # Registration page
+
 │   ├── login.html           # Login page
+
 ├── static/                  # Static files (CSS, JS, images)
+
 │   ├── styles.css           # CSS styles
+
 |   ├── script.js            # JS script
+
 ├── README.md                # Project documentation
+
 ├── database.db              # SQLite database
 
 ## Usage
