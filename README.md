@@ -1,93 +1,115 @@
 # Biometric Authentication System
 
-This is a comprehensive Biometric Authentication System that integrates multiple authentication methods such as face recognition, voice recognition with a code word, and digital signature verification. The application allows users to securely register, authenticate, and manage their biometric credentials.
+This is a comprehensive Biometric Authentication System that integrates multiple authentication methods such as **face recognition**, **voice recognition with a code word**, and **digital signature (gesture) verification**. The application allows users to securely register, authenticate, and manage their biometric credentials.
+
+---
 
 ## Features
-### User Registration:
-Register using a unique user ID.
 
-### Capture and store:
-A photo for face recognition.
-A voice-based code word for authentication.
-A photo for gesture detection.
+### User Registration
+- Register using a unique **User ID**.
+- Capture and store:
+  - A photo for **face recognition**.
+  - A voice-based **code word** for authentication.
+  - A signature image for **gesture recognition**.
 
-### User Authentication:
-Verify registered credentials using:
-Face recognition.
-Voice-based code word.
-Gesture Recognition.
-Provide a success or failure response based on verification results.
+### User Authentication
+- Verify registered credentials using:
+  - Face Recognition.
+  - Voice Code Word.
+  - Gesture/Signature Recognition.
+- Displays **success** or **failure** response based on verification results.
 
-### User Management:
-Add new user after registration.
-Delete user credentials from the system when deleted.
+### User Management
+- Add new users after registration.
+- Delete user credentials from the system.
 
-### Technologies Used:
-Python (Flask framework)
-OpenCV for face recognition.
-Voice processing libraries (e.g., librosa, pyaudio).
-Signature handling using image processing techniques.
-HTML, CSS, and JavaScript for the frontend.
+---
 
-### Requirements
-Python 3.7 or above
-## Required Python Libraries:
+## Technologies Used
 
-### Common libraries include:
-Flask
-OpenCV
-librosa
-numpy
-pyaudio
-A camera and microphone for capturing biometrics.
+- **Backend:** Python with Flask Framework  
+- **Face Recognition:** OpenCV  
+- **Voice Recognition:** librosa, pyaudio  
+- **Signature Verification:** Image processing techniques  
+- **Frontend:** HTML, CSS, JavaScript
+
+---
+
+## Requirements
+
+- Python 3.7 or above  
+- A functioning camera and microphone  
+
+### Required Python Libraries
+
+- Flask  
+- OpenCV  
+- librosa  
+- numpy  
+- pyaudio  
+
+Install them using:
+
+```
+pip install -r requirements.txt
+```
+
+---
 
 ## Installation and Setup
-Clone the repository
-Install dependencies
-Run the Flask application python app.py
 
-### Access the application:
-Open your browser and navigate to http://127.0.0.1:5000.
+### 1. Clone the Repository
+
+```
+git clone <repository-url>
+cd biometric-authentication-system
+```
+
+### 2. Install Dependencies
+
+```
+pip install -r requirements.txt
+```
+
+### 3. Run the Flask Application
+
+```
+python app.py
+```
+
+---
+
+### Access the Application
+
+Open your browser and go to:
+
+```
+http://127.0.0.1:5000
+```
+
+---
 
 ## Project Structure
-biometric-authentication/
 
-├── app.py                   # Main application file
+```
+biometric-authentication-system/
+├── app.py                       # Main Flask application
+├── requirements.txt             # Python dependencies
+├── static/                      # CSS, JS, and image assets
+├── templates/                   # HTML templates (e.g., index.html)
+├── face_data/                   # Stored face images
+├── voice_data/                  # Stored voice samples
+├── signature_data/              # Stored signature images
+├── utils/                       # Helper scripts for processing
+└── README.md                    # Project documentation
+```
 
-├── templates/               # HTML templates
+---
 
-│   ├── index.html           # Home page
+## Additional Notes
 
-│   ├── register.html        # Registration page
+- Multi-language support can be integrated into the frontend for accessibility.
+- Ideal for high-security systems needing multi-factor biometric verification.
 
-│   ├── login.html           # Login page
 
-├── static/                  # Static files (CSS, JS, images)
-
-│   ├── styles.css           # CSS styles
-
-|   ├── script.js            # JS script
-
-├── README.md                # Project documentation
-
-├── database.db              # SQLite database
-
-## Usage
-### Register a New User:
-Go to the Register page.
-Enter a unique user ID.
-Capture a photo, record a voice code word, and provide a signature.
-Submit to save the data.
-### Authenticate User:
-Go to the Login page.
-Provide the registered credentials.
-The system will authenticate and display the result.
-
-### Future Enhancements
-Integration with cloud storage for biometric data.
-
-Advanced noise filtering for voice recognition in noisy environments.
-
-Support for additional biometric methods like fingerprint recognition.
-
-Multi-language support for the UI.
