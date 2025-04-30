@@ -49,12 +49,6 @@ This is a comprehensive Biometric Authentication System that integrates multiple
 - numpy  
 - pyaudio  
 
-Install them using:
-
-```
-pip install -r requirements.txt
-```
-
 ---
 
 ## Installation and Setup
@@ -67,10 +61,6 @@ cd biometric-authentication-system
 ```
 
 ### 2. Install Dependencies
-
-```
-pip install -r requirements.txt
-```
 
 ### 3. Run the Flask Application
 
@@ -95,7 +85,6 @@ http://127.0.0.1:5000
 ```
 biometric-authentication-system/
 ├── app.py                       # Main Flask application
-├── requirements.txt             # Python dependencies
 ├── static/                      # CSS, JS, and image assets
 ├── templates/                   # HTML templates (e.g., index.html)
 ├── face_data/                   # Stored face images
